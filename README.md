@@ -23,14 +23,16 @@ options:
 Sample `config.json`:
 ```json
 {
-    "api_key": "sk-xxx",
-    "api_base": "https://chat.pppan.net/v1",
+    "api_key": "<API_TOKEN>",
+    "api_base": "https://api.aimlapi.com",
+    "api_type": "open_ai",
+    "api_version": null,
     "model": "gpt-3.5-turbo",
     "context": 2,
     "stream": true,
     "stream_render": true,
     "showtokens": false,
-    "proxy": "socks5://localhost:1080",
+    "proxy": null,
     "prompt": [
         { "role": "system", "content": "If your response contains code, show with syntax highlight, for example ```js\ncode\n```" }
     ]
@@ -108,4 +110,4 @@ $ docker run --rm -it -v $PWD/config.json:/gptcli/config.json --network host gpt
 - https://platform.openai.com/account/api-keys
 
 [vid]: https://asciinema.org/a/568859
-[key]: https://platform.openai.com/account/api-keys
+[key]: https://aimlapi.com/app/keys
